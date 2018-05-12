@@ -1,0 +1,1361 @@
+
+201508_noshiro.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000007f0  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000006  00800060  000007f0  00000884  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          0000004f  00800066  00800066  0000088a  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000088a  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000060  00000000  00000000  000008ba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000066e  00000000  00000000  0000091a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000200  00000000  00000000  00000f88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000211  00000000  00000000  00001188  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000174  00000000  00000000  0000139c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000257  00000000  00000000  00001510  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000007d5  00000000  00000000  00001767  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000080  00000000  00000000  00001f3c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	1e c0       	rjmp	.+60     	; 0x3e <__ctors_end>
+   2:	37 c0       	rjmp	.+110    	; 0x72 <__vector_1>
+   4:	35 c0       	rjmp	.+106    	; 0x70 <__bad_interrupt>
+   6:	34 c0       	rjmp	.+104    	; 0x70 <__bad_interrupt>
+   8:	33 c0       	rjmp	.+102    	; 0x70 <__bad_interrupt>
+   a:	32 c0       	rjmp	.+100    	; 0x70 <__bad_interrupt>
+   c:	45 c0       	rjmp	.+138    	; 0x98 <__vector_6>
+   e:	4c c1       	rjmp	.+664    	; 0x2a8 <__vector_7>
+  10:	2f c0       	rjmp	.+94     	; 0x70 <__bad_interrupt>
+  12:	2e c0       	rjmp	.+92     	; 0x70 <__bad_interrupt>
+  14:	2d c0       	rjmp	.+90     	; 0x70 <__bad_interrupt>
+  16:	2c c0       	rjmp	.+88     	; 0x70 <__bad_interrupt>
+  18:	2b c0       	rjmp	.+86     	; 0x70 <__bad_interrupt>
+  1a:	2a c0       	rjmp	.+84     	; 0x70 <__bad_interrupt>
+  1c:	29 c0       	rjmp	.+82     	; 0x70 <__bad_interrupt>
+  1e:	28 c0       	rjmp	.+80     	; 0x70 <__bad_interrupt>
+  20:	27 c0       	rjmp	.+78     	; 0x70 <__bad_interrupt>
+  22:	26 c0       	rjmp	.+76     	; 0x70 <__bad_interrupt>
+  24:	25 c0       	rjmp	.+74     	; 0x70 <__bad_interrupt>
+  26:	ce c0       	rjmp	.+412    	; 0x1c4 <main+0x5e>
+  28:	cf c0       	rjmp	.+414    	; 0x1c8 <main+0x62>
+  2a:	d0 c0       	rjmp	.+416    	; 0x1cc <main+0x66>
+  2c:	d1 c0       	rjmp	.+418    	; 0x1d0 <main+0x6a>
+  2e:	d2 c0       	rjmp	.+420    	; 0x1d4 <main+0x6e>
+  30:	d4 c0       	rjmp	.+424    	; 0x1da <main+0x74>
+  32:	d6 c0       	rjmp	.+428    	; 0x1e0 <main+0x7a>
+  34:	d8 c0       	rjmp	.+432    	; 0x1e6 <main+0x80>
+  36:	da c0       	rjmp	.+436    	; 0x1ec <main+0x86>
+  38:	dc c0       	rjmp	.+440    	; 0x1f2 <main+0x8c>
+  3a:	de c0       	rjmp	.+444    	; 0x1f8 <main+0x92>
+  3c:	e0 c0       	rjmp	.+448    	; 0x1fe <main+0x98>
+
+0000003e <__ctors_end>:
+  3e:	11 24       	eor	r1, r1
+  40:	1f be       	out	0x3f, r1	; 63
+  42:	cf ed       	ldi	r28, 0xDF	; 223
+  44:	cd bf       	out	0x3d, r28	; 61
+
+00000046 <__do_copy_data>:
+  46:	10 e0       	ldi	r17, 0x00	; 0
+  48:	a0 e6       	ldi	r26, 0x60	; 96
+  4a:	b0 e0       	ldi	r27, 0x00	; 0
+  4c:	e0 ef       	ldi	r30, 0xF0	; 240
+  4e:	f7 e0       	ldi	r31, 0x07	; 7
+  50:	02 c0       	rjmp	.+4      	; 0x56 <__do_copy_data+0x10>
+  52:	05 90       	lpm	r0, Z+
+  54:	0d 92       	st	X+, r0
+  56:	a6 36       	cpi	r26, 0x66	; 102
+  58:	b1 07       	cpc	r27, r17
+  5a:	d9 f7       	brne	.-10     	; 0x52 <__do_copy_data+0xc>
+
+0000005c <__do_clear_bss>:
+  5c:	20 e0       	ldi	r18, 0x00	; 0
+  5e:	a6 e6       	ldi	r26, 0x66	; 102
+  60:	b0 e0       	ldi	r27, 0x00	; 0
+  62:	01 c0       	rjmp	.+2      	; 0x66 <.do_clear_bss_start>
+
+00000064 <.do_clear_bss_loop>:
+  64:	1d 92       	st	X+, r1
+
+00000066 <.do_clear_bss_start>:
+  66:	a5 3b       	cpi	r26, 0xB5	; 181
+  68:	b2 07       	cpc	r27, r18
+  6a:	e1 f7       	brne	.-8      	; 0x64 <.do_clear_bss_loop>
+  6c:	7c d0       	rcall	.+248    	; 0x166 <main>
+  6e:	be c3       	rjmp	.+1916   	; 0x7ec <_exit>
+
+00000070 <__bad_interrupt>:
+  70:	c7 cf       	rjmp	.-114    	; 0x0 <__vectors>
+
+00000072 <__vector_1>:
+unsigned long Ctol();
+unsigned int Ctoi();
+
+
+ISR(INT0_vect)
+{
+  72:	1f 92       	push	r1
+  74:	0f 92       	push	r0
+  76:	0f b6       	in	r0, 0x3f	; 63
+  78:	0f 92       	push	r0
+  7a:	11 24       	eor	r1, r1
+  7c:	8f 93       	push	r24
+		triggered = 1;
+  7e:	81 e0       	ldi	r24, 0x01	; 1
+  80:	80 93 68 00 	sts	0x0068, r24
+}
+  84:	8f 91       	pop	r24
+  86:	0f 90       	pop	r0
+  88:	0f be       	out	0x3f, r0	; 63
+  8a:	0f 90       	pop	r0
+  8c:	1f 90       	pop	r1
+  8e:	18 95       	reti
+
+00000090 <USART_Transmit>:
+		}
+	}
+}
+void USART_Transmit(unsigned char data)
+{
+	while(!(UCSRA&(1<<UDRE))); /*送信ﾊﾞｯﾌｧ空き待機 */
+  90:	5d 9b       	sbis	0x0b, 5	; 11
+  92:	fe cf       	rjmp	.-4      	; 0x90 <USART_Transmit>
+	UDR=data; /*ﾃﾞｰﾀ送信(送信開始)*/
+  94:	8c b9       	out	0x0c, r24	; 12
+  96:	08 95       	ret
+
+00000098 <__vector_6>:
+{
+		triggered = 1;
+}
+
+ISR(TIMER0_OVF_vect)  //タイマ割り込み
+{
+  98:	1f 92       	push	r1
+  9a:	0f 92       	push	r0
+  9c:	0f b6       	in	r0, 0x3f	; 63
+  9e:	0f 92       	push	r0
+  a0:	11 24       	eor	r1, r1
+  a2:	2f 93       	push	r18
+  a4:	3f 93       	push	r19
+  a6:	4f 93       	push	r20
+  a8:	5f 93       	push	r21
+  aa:	6f 93       	push	r22
+  ac:	7f 93       	push	r23
+  ae:	8f 93       	push	r24
+  b0:	9f 93       	push	r25
+  b2:	af 93       	push	r26
+  b4:	bf 93       	push	r27
+  b6:	ef 93       	push	r30
+  b8:	ff 93       	push	r31
+	if (counter==10)
+  ba:	80 91 66 00 	lds	r24, 0x0066
+  be:	90 91 67 00 	lds	r25, 0x0067
+  c2:	8a 30       	cpi	r24, 0x0A	; 10
+  c4:	91 05       	cpc	r25, r1
+  c6:	b9 f4       	brne	.+46     	; 0xf6 <__stack+0x17>
+	{
+		USART_Transmit('t');
+  c8:	84 e7       	ldi	r24, 0x74	; 116
+  ca:	e2 df       	rcall	.-60     	; 0x90 <USART_Transmit>
+		counter=0;
+  cc:	10 92 67 00 	sts	0x0067, r1
+  d0:	10 92 66 00 	sts	0x0066, r1
+		TIMER_OFF();
+  d4:	13 be       	out	0x33, r1	; 51
+		status=0;
+  d6:	10 92 8f 00 	sts	0x008F, r1
+  da:	10 92 8e 00 	sts	0x008E, r1
+		count=0;
+  de:	10 92 8d 00 	sts	0x008D, r1
+  e2:	10 92 8c 00 	sts	0x008C, r1
+		command=0;
+  e6:	10 92 69 00 	sts	0x0069, r1
+		j=0;
+  ea:	10 92 8b 00 	sts	0x008B, r1
+  ee:	10 92 8a 00 	sts	0x008A, r1
+		PORTD|=(1<<PD3);
+  f2:	93 9a       	sbi	0x12, 3	; 18
+  f4:	05 c0       	rjmp	.+10     	; 0x100 <__stack+0x21>
+	}else
+	{
+		counter++;
+  f6:	01 96       	adiw	r24, 0x01	; 1
+  f8:	90 93 67 00 	sts	0x0067, r25
+  fc:	80 93 66 00 	sts	0x0066, r24
+	}
+}
+ 100:	ff 91       	pop	r31
+ 102:	ef 91       	pop	r30
+ 104:	bf 91       	pop	r27
+ 106:	af 91       	pop	r26
+ 108:	9f 91       	pop	r25
+ 10a:	8f 91       	pop	r24
+ 10c:	7f 91       	pop	r23
+ 10e:	6f 91       	pop	r22
+ 110:	5f 91       	pop	r21
+ 112:	4f 91       	pop	r20
+ 114:	3f 91       	pop	r19
+ 116:	2f 91       	pop	r18
+ 118:	0f 90       	pop	r0
+ 11a:	0f be       	out	0x3f, r0	; 63
+ 11c:	0f 90       	pop	r0
+ 11e:	1f 90       	pop	r1
+ 120:	18 95       	reti
+
+00000122 <USART_initialize>:
+{
+	while(!(UCSRA&(1<<UDRE))); /*送信ﾊﾞｯﾌｧ空き待機 */
+	UDR=data; /*ﾃﾞｰﾀ送信(送信開始)*/
+}
+void USART_initialize(){
+	UBRRH=0;
+ 122:	12 b8       	out	0x02, r1	; 2
+	UBRRL=8;
+ 124:	88 e0       	ldi	r24, 0x08	; 8
+ 126:	89 b9       	out	0x09, r24	; 9
+	UCSRA|=0b00000010;
+ 128:	59 9a       	sbi	0x0b, 1	; 11
+	UCSRC=(1<<USBS)|(3<<UCSZ0);
+ 12a:	8e e0       	ldi	r24, 0x0E	; 14
+ 12c:	83 b9       	out	0x03, r24	; 3
+	UCSRB=(1<<RXEN)|(1<<TXEN)|(1<<RXCIE);
+ 12e:	88 e9       	ldi	r24, 0x98	; 152
+ 130:	8a b9       	out	0x0a, r24	; 10
+ 132:	08 95       	ret
+
+00000134 <spi_slave_receive>:
+}
+
+uint8_t	spi_slave_receive(uint8_t send)
+{
+	USIDR = send;
+ 134:	8f b9       	out	0x0f, r24	; 15
+	USISR = (1<<USIOIF);
+ 136:	80 e4       	ldi	r24, 0x40	; 64
+ 138:	8e b9       	out	0x0e, r24	; 14
+	while (!(USISR & (1<<USIOIF)));
+ 13a:	76 9b       	sbis	0x0e, 6	; 14
+ 13c:	fe cf       	rjmp	.-4      	; 0x13a <spi_slave_receive+0x6>
+	uint8_t	receive = USIDR;
+ 13e:	8f b1       	in	r24, 0x0f	; 15
+
+	return	receive;
+}
+ 140:	08 95       	ret
+
+00000142 <spi_slave_init>:
+
+void	spi_slave_init()
+{
+	USICR = (1<<USIWM0)|(1<<USICS1);
+ 142:	88 e1       	ldi	r24, 0x18	; 24
+ 144:	8d b9       	out	0x0d, r24	; 13
+
+	// MISO(PB6)は出力に
+	DDRB |= _BV(MISO);
+ 146:	be 9a       	sbi	0x17, 6	; 23
+	// MOSI(PB5)/USCKは入力に
+	DDRB &= ~(_BV(MOSI) | _BV(USCK));
+ 148:	87 b3       	in	r24, 0x17	; 23
+ 14a:	8f 75       	andi	r24, 0x5F	; 95
+ 14c:	87 bb       	out	0x17, r24	; 23
+
+	// MOSI(PB5)/USCK(PB7)プルアップ
+	PORTB |= (_BV(MOSI) | _BV(USCK));
+ 14e:	88 b3       	in	r24, 0x18	; 24
+ 150:	80 6a       	ori	r24, 0xA0	; 160
+ 152:	88 bb       	out	0x18, r24	; 24
+	
+	//INT0
+	
+	MCUCR = (1<<ISC01); // INT0立ち下がり
+ 154:	82 e0       	ldi	r24, 0x02	; 2
+ 156:	85 bf       	out	0x35, r24	; 53
+	GIMSK = (1<<INT0);  // INT0の割り込み許可
+ 158:	80 e4       	ldi	r24, 0x40	; 64
+ 15a:	8b bf       	out	0x3b, r24	; 59
+	
+	TIMSK  |= (1<<TOIE0);
+ 15c:	89 b7       	in	r24, 0x39	; 57
+ 15e:	82 60       	ori	r24, 0x02	; 2
+ 160:	89 bf       	out	0x39, r24	; 57
+	TIMER_OFF();
+ 162:	13 be       	out	0x33, r1	; 51
+ 164:	08 95       	ret
+
+00000166 <main>:
+}
+
+
+int main(void)
+{
+	USART_initialize();
+ 166:	dd df       	rcall	.-70     	; 0x122 <USART_initialize>
+	//個体差が激しいので必ずマイコンごとにデフォルト値を確認すること。適正周波数は8.29MHzである。
+	//だいたいデフォルト値プラス6ぐらいだと思われる。
+	//Fuse bit Low = E4
+	OSCCAL=0x59;
+ 168:	89 e5       	ldi	r24, 0x59	; 89
+ 16a:	81 bf       	out	0x31, r24	; 49
+	PORTD|=(1<<PD3);
+ 16c:	93 9a       	sbi	0x12, 3	; 18
+	DDRD|=(1<<PD3);
+ 16e:	8b 9a       	sbi	0x11, 3	; 17
+	spi_slave_init();
+ 170:	e8 df       	rcall	.-48     	; 0x142 <spi_slave_init>
+	sei();
+ 172:	78 94       	sei
+	USART_Transmit('R');
+ 174:	82 e5       	ldi	r24, 0x52	; 82
+ 176:	8c df       	rcall	.-232    	; 0x90 <USART_Transmit>
+				break;
+				case 13:
+				data = now.longitude>>8;
+				break;
+				case 14:
+				data = now.longitude;
+ 178:	0f 2e       	mov	r0, r31
+ 17a:	f8 e9       	ldi	r31, 0x98	; 152
+ 17c:	ef 2e       	mov	r14, r31
+ 17e:	f0 e0       	ldi	r31, 0x00	; 0
+ 180:	ff 2e       	mov	r15, r31
+ 182:	f0 2d       	mov	r31, r0
+				break;
+				case 9:
+				data = now.latitude>>8;
+				break;
+				case 10:
+				data = now.latitude;
+ 184:	0f 2e       	mov	r0, r31
+ 186:	f4 e9       	ldi	r31, 0x94	; 148
+ 188:	cf 2e       	mov	r12, r31
+ 18a:	f0 e0       	ldi	r31, 0x00	; 0
+ 18c:	df 2e       	mov	r13, r31
+ 18e:	f0 2d       	mov	r31, r0
+				break;
+				case 5:
+				data= now.UTC_time>>8;
+				break;
+				case 6:
+				data= now.UTC_time;
+ 190:	c0 e9       	ldi	r28, 0x90	; 144
+ 192:	d0 e0       	ldi	r29, 0x00	; 0
+	spi_slave_init();
+	sei();
+	USART_Transmit('R');
+	while(1)
+	{
+		while (!triggered)
+ 194:	80 91 68 00 	lds	r24, 0x0068
+ 198:	88 23       	and	r24, r24
+ 19a:	e1 f3       	breq	.-8      	; 0x194 <main+0x2e>
+		{
+		}
+		triggered = 0;
+ 19c:	10 92 68 00 	sts	0x0068, r1
+		
+		if (command==0)
+ 1a0:	80 91 69 00 	lds	r24, 0x0069
+ 1a4:	81 11       	cpse	r24, r1
+ 1a6:	05 c0       	rjmp	.+10     	; 0x1b2 <main+0x4c>
+		{
+			command = spi_slave_receive(0x57);
+ 1a8:	87 e5       	ldi	r24, 0x57	; 87
+ 1aa:	c4 df       	rcall	.-120    	; 0x134 <spi_slave_receive>
+ 1ac:	80 93 69 00 	sts	0x0069, r24
+ 1b0:	f1 cf       	rjmp	.-30     	; 0x194 <main+0x2e>
+		}else
+		{
+			uint8_t data=0x32;
+			switch(command){
+ 1b2:	90 e0       	ldi	r25, 0x00	; 0
+ 1b4:	fc 01       	movw	r30, r24
+ 1b6:	33 97       	sbiw	r30, 0x03	; 3
+ 1b8:	ec 30       	cpi	r30, 0x0C	; 12
+ 1ba:	f1 05       	cpc	r31, r1
+ 1bc:	18 f5       	brcc	.+70     	; 0x204 <main+0x9e>
+ 1be:	ed 5e       	subi	r30, 0xED	; 237
+ 1c0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1c2:	09 94       	ijmp
+				case 3:
+				data= now.UTC_time>>24;
+ 1c4:	8b 81       	ldd	r24, Y+3	; 0x03
+				break;
+ 1c6:	1f c0       	rjmp	.+62     	; 0x206 <main+0xa0>
+				case 4:
+				data = now.UTC_time>>16;
+ 1c8:	8a 81       	ldd	r24, Y+2	; 0x02
+				break;
+ 1ca:	1d c0       	rjmp	.+58     	; 0x206 <main+0xa0>
+				case 5:
+				data= now.UTC_time>>8;
+ 1cc:	89 81       	ldd	r24, Y+1	; 0x01
+				break;
+ 1ce:	1b c0       	rjmp	.+54     	; 0x206 <main+0xa0>
+				case 6:
+				data= now.UTC_time;
+ 1d0:	88 81       	ld	r24, Y
+				break;
+ 1d2:	19 c0       	rjmp	.+50     	; 0x206 <main+0xa0>
+				case 7:
+				data= now.latitude>>24;
+ 1d4:	f6 01       	movw	r30, r12
+ 1d6:	83 81       	ldd	r24, Z+3	; 0x03
+				break;
+ 1d8:	16 c0       	rjmp	.+44     	; 0x206 <main+0xa0>
+				case 8:
+				data = now.latitude>>16;
+ 1da:	f6 01       	movw	r30, r12
+ 1dc:	82 81       	ldd	r24, Z+2	; 0x02
+				break;
+ 1de:	13 c0       	rjmp	.+38     	; 0x206 <main+0xa0>
+				case 9:
+				data = now.latitude>>8;
+ 1e0:	f6 01       	movw	r30, r12
+ 1e2:	81 81       	ldd	r24, Z+1	; 0x01
+				break;
+ 1e4:	10 c0       	rjmp	.+32     	; 0x206 <main+0xa0>
+				case 10:
+				data = now.latitude;
+ 1e6:	f6 01       	movw	r30, r12
+ 1e8:	80 81       	ld	r24, Z
+				break;
+ 1ea:	0d c0       	rjmp	.+26     	; 0x206 <main+0xa0>
+				case 11:
+				data = now.longitude>>24;
+ 1ec:	f7 01       	movw	r30, r14
+ 1ee:	83 81       	ldd	r24, Z+3	; 0x03
+				break;
+ 1f0:	0a c0       	rjmp	.+20     	; 0x206 <main+0xa0>
+				case 12:
+				data = now.longitude>>16;
+ 1f2:	f7 01       	movw	r30, r14
+ 1f4:	82 81       	ldd	r24, Z+2	; 0x02
+				break;
+ 1f6:	07 c0       	rjmp	.+14     	; 0x206 <main+0xa0>
+				case 13:
+				data = now.longitude>>8;
+ 1f8:	f7 01       	movw	r30, r14
+ 1fa:	81 81       	ldd	r24, Z+1	; 0x01
+				break;
+ 1fc:	04 c0       	rjmp	.+8      	; 0x206 <main+0xa0>
+				case 14:
+				data = now.longitude;
+ 1fe:	f7 01       	movw	r30, r14
+ 200:	80 81       	ld	r24, Z
+				break;
+ 202:	01 c0       	rjmp	.+2      	; 0x206 <main+0xa0>
+		if (command==0)
+		{
+			command = spi_slave_receive(0x57);
+		}else
+		{
+			uint8_t data=0x32;
+ 204:	82 e3       	ldi	r24, 0x32	; 50
+				break;
+				case 14:
+				data = now.longitude;
+				break;
+			}
+			uint8_t r = spi_slave_receive(data);
+ 206:	96 df       	rcall	.-212    	; 0x134 <spi_slave_receive>
+ 208:	18 2f       	mov	r17, r24
+			USART_Transmit(command);
+ 20a:	80 91 69 00 	lds	r24, 0x0069
+ 20e:	40 df       	rcall	.-384    	; 0x90 <USART_Transmit>
+			if ((command>=3)&&(command<=13)&&(r==0x03))
+ 210:	90 91 69 00 	lds	r25, 0x0069
+ 214:	2d ef       	ldi	r18, 0xFD	; 253
+ 216:	29 0f       	add	r18, r25
+ 218:	2b 30       	cpi	r18, 0x0B	; 11
+ 21a:	30 f4       	brcc	.+12     	; 0x228 <main+0xc2>
+ 21c:	13 30       	cpi	r17, 0x03	; 3
+ 21e:	21 f4       	brne	.+8      	; 0x228 <main+0xc2>
+			{
+				command++;
+ 220:	9f 5f       	subi	r25, 0xFF	; 255
+ 222:	90 93 69 00 	sts	0x0069, r25
+ 226:	b6 cf       	rjmp	.-148    	; 0x194 <main+0x2e>
+			}else
+			{
+				command=0;
+ 228:	10 92 69 00 	sts	0x0069, r1
+ 22c:	b3 cf       	rjmp	.-154    	; 0x194 <main+0x2e>
+
+0000022e <Ctol>:
+	
+	TIMSK  |= (1<<TOIE0);
+	TIMER_OFF();
+}
+
+unsigned long Ctol(unsigned char *num,int length){
+ 22e:	cf 92       	push	r12
+ 230:	df 92       	push	r13
+ 232:	ef 92       	push	r14
+ 234:	ff 92       	push	r15
+	unsigned long ret=0;
+	for (int i=0;i<length;i++){
+ 236:	16 16       	cp	r1, r22
+ 238:	17 06       	cpc	r1, r23
+ 23a:	74 f5       	brge	.+92     	; 0x298 <Ctol+0x6a>
+ 23c:	fc 01       	movw	r30, r24
+ 23e:	9c 01       	movw	r18, r24
+ 240:	26 0f       	add	r18, r22
+ 242:	37 1f       	adc	r19, r23
+	TIMSK  |= (1<<TOIE0);
+	TIMER_OFF();
+}
+
+unsigned long Ctol(unsigned char *num,int length){
+	unsigned long ret=0;
+ 244:	60 e0       	ldi	r22, 0x00	; 0
+ 246:	70 e0       	ldi	r23, 0x00	; 0
+ 248:	cb 01       	movw	r24, r22
+	for (int i=0;i<length;i++){
+		ret*=10;
+ 24a:	dc 01       	movw	r26, r24
+ 24c:	cb 01       	movw	r24, r22
+ 24e:	88 0f       	add	r24, r24
+ 250:	99 1f       	adc	r25, r25
+ 252:	aa 1f       	adc	r26, r26
+ 254:	bb 1f       	adc	r27, r27
+ 256:	6c 01       	movw	r12, r24
+ 258:	7d 01       	movw	r14, r26
+ 25a:	cc 0c       	add	r12, r12
+ 25c:	dd 1c       	adc	r13, r13
+ 25e:	ee 1c       	adc	r14, r14
+ 260:	ff 1c       	adc	r15, r15
+ 262:	cc 0c       	add	r12, r12
+ 264:	dd 1c       	adc	r13, r13
+ 266:	ee 1c       	adc	r14, r14
+ 268:	ff 1c       	adc	r15, r15
+ 26a:	8c 0d       	add	r24, r12
+ 26c:	9d 1d       	adc	r25, r13
+ 26e:	ae 1d       	adc	r26, r14
+ 270:	bf 1d       	adc	r27, r15
+		ret+=(num[i]-48);
+ 272:	c1 90       	ld	r12, Z+
+ 274:	d1 2c       	mov	r13, r1
+ 276:	40 e3       	ldi	r20, 0x30	; 48
+ 278:	c4 1a       	sub	r12, r20
+ 27a:	d1 08       	sbc	r13, r1
+ 27c:	ee 24       	eor	r14, r14
+ 27e:	d7 fc       	sbrc	r13, 7
+ 280:	e0 94       	com	r14
+ 282:	fe 2c       	mov	r15, r14
+ 284:	bc 01       	movw	r22, r24
+ 286:	cd 01       	movw	r24, r26
+ 288:	6c 0d       	add	r22, r12
+ 28a:	7d 1d       	adc	r23, r13
+ 28c:	8e 1d       	adc	r24, r14
+ 28e:	9f 1d       	adc	r25, r15
+	TIMER_OFF();
+}
+
+unsigned long Ctol(unsigned char *num,int length){
+	unsigned long ret=0;
+	for (int i=0;i<length;i++){
+ 290:	e2 17       	cp	r30, r18
+ 292:	f3 07       	cpc	r31, r19
+ 294:	d1 f6       	brne	.-76     	; 0x24a <Ctol+0x1c>
+ 296:	03 c0       	rjmp	.+6      	; 0x29e <Ctol+0x70>
+	TIMSK  |= (1<<TOIE0);
+	TIMER_OFF();
+}
+
+unsigned long Ctol(unsigned char *num,int length){
+	unsigned long ret=0;
+ 298:	60 e0       	ldi	r22, 0x00	; 0
+ 29a:	70 e0       	ldi	r23, 0x00	; 0
+ 29c:	cb 01       	movw	r24, r22
+	for (int i=0;i<length;i++){
+		ret*=10;
+		ret+=(num[i]-48);
+	}
+	return ret;
+}
+ 29e:	ff 90       	pop	r15
+ 2a0:	ef 90       	pop	r14
+ 2a2:	df 90       	pop	r13
+ 2a4:	cf 90       	pop	r12
+ 2a6:	08 95       	ret
+
+000002a8 <__vector_7>:
+		counter++;
+	}
+}
+
+
+ISR(USART_RX_vect){
+ 2a8:	1f 92       	push	r1
+ 2aa:	0f 92       	push	r0
+ 2ac:	0f b6       	in	r0, 0x3f	; 63
+ 2ae:	0f 92       	push	r0
+ 2b0:	11 24       	eor	r1, r1
+ 2b2:	cf 92       	push	r12
+ 2b4:	df 92       	push	r13
+ 2b6:	ef 92       	push	r14
+ 2b8:	ff 92       	push	r15
+ 2ba:	2f 93       	push	r18
+ 2bc:	3f 93       	push	r19
+ 2be:	4f 93       	push	r20
+ 2c0:	5f 93       	push	r21
+ 2c2:	6f 93       	push	r22
+ 2c4:	7f 93       	push	r23
+ 2c6:	8f 93       	push	r24
+ 2c8:	9f 93       	push	r25
+ 2ca:	af 93       	push	r26
+ 2cc:	bf 93       	push	r27
+ 2ce:	cf 93       	push	r28
+ 2d0:	df 93       	push	r29
+ 2d2:	ef 93       	push	r30
+ 2d4:	ff 93       	push	r31
+	//スタックにUDRからデータを格納
+	for (int i=4;i>0;i--)
+	{
+		stack[i]=stack[i-1];
+ 2d6:	af e9       	ldi	r26, 0x9F	; 159
+ 2d8:	b0 e0       	ldi	r27, 0x00	; 0
+ 2da:	8c 91       	ld	r24, X
+ 2dc:	80 93 a0 00 	sts	0x00A0, r24
+ 2e0:	ee e9       	ldi	r30, 0x9E	; 158
+ 2e2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2e4:	80 81       	ld	r24, Z
+ 2e6:	8c 93       	st	X, r24
+ 2e8:	ad e9       	ldi	r26, 0x9D	; 157
+ 2ea:	b0 e0       	ldi	r27, 0x00	; 0
+ 2ec:	8c 91       	ld	r24, X
+ 2ee:	80 83       	st	Z, r24
+ 2f0:	ec e9       	ldi	r30, 0x9C	; 156
+ 2f2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2f4:	80 81       	ld	r24, Z
+ 2f6:	8c 93       	st	X, r24
+	}
+	stack[0]=UDR;
+ 2f8:	8c b1       	in	r24, 0x0c	; 12
+ 2fa:	80 83       	st	Z, r24
+	
+	//USART_Transmit(stack[0]);
+	//スタックがトリガー文字列かどうかを判定(status状態変数がFalse時のみ)
+	if (status!=1)
+ 2fc:	80 91 8e 00 	lds	r24, 0x008E
+ 300:	90 91 8f 00 	lds	r25, 0x008F
+ 304:	01 97       	sbiw	r24, 0x01	; 1
+ 306:	09 f4       	brne	.+2      	; 0x30a <__vector_7+0x62>
+ 308:	3a c2       	rjmp	.+1140   	; 0x77e <__vector_7+0x4d6>
+ 30a:	a0 e6       	ldi	r26, 0x60	; 96
+ 30c:	b0 e0       	ldi	r27, 0x00	; 0
+ 30e:	81 ea       	ldi	r24, 0xA1	; 161
+ 310:	90 e0       	ldi	r25, 0x00	; 0
+ 312:	20 e0       	ldi	r18, 0x00	; 0
+ 314:	30 e0       	ldi	r19, 0x00	; 0
+	{
+		int c=0;
+		for (int i=0;i<5;i++)
+		{
+			if (stack[i]==GPRMC[i])
+ 316:	51 91       	ld	r21, Z+
+ 318:	4d 91       	ld	r20, X+
+ 31a:	54 13       	cpse	r21, r20
+ 31c:	02 c0       	rjmp	.+4      	; 0x322 <__vector_7+0x7a>
+			{
+				c++;
+ 31e:	2f 5f       	subi	r18, 0xFF	; 255
+ 320:	3f 4f       	sbci	r19, 0xFF	; 255
+	//USART_Transmit(stack[0]);
+	//スタックがトリガー文字列かどうかを判定(status状態変数がFalse時のみ)
+	if (status!=1)
+	{
+		int c=0;
+		for (int i=0;i<5;i++)
+ 322:	e8 17       	cp	r30, r24
+ 324:	f9 07       	cpc	r31, r25
+ 326:	b9 f7       	brne	.-18     	; 0x316 <__vector_7+0x6e>
+			if (stack[i]==GPRMC[i])
+			{
+				c++;
+			}
+		}
+		if(c==5){
+ 328:	25 30       	cpi	r18, 0x05	; 5
+ 32a:	31 05       	cpc	r19, r1
+ 32c:	09 f0       	breq	.+2      	; 0x330 <__vector_7+0x88>
+ 32e:	47 c2       	rjmp	.+1166   	; 0x7be <__vector_7+0x516>
+			status=1;
+ 330:	81 e0       	ldi	r24, 0x01	; 1
+ 332:	90 e0       	ldi	r25, 0x00	; 0
+ 334:	90 93 8f 00 	sts	0x008F, r25
+ 338:	80 93 8e 00 	sts	0x008E, r24
+ 33c:	20 c2       	rjmp	.+1088   	; 0x77e <__vector_7+0x4d6>
+		j++;
+		//UTCデータの取得
+		if (count==14)
+		{
+			//USART_Transmit(rawdata[13]);
+			if (rawdata[13]=='A')
+ 33e:	80 91 ae 00 	lds	r24, 0x00AE
+ 342:	81 34       	cpi	r24, 0x41	; 65
+ 344:	e1 f4       	brne	.+56     	; 0x37e <__vector_7+0xd6>
+ 346:	e3 ea       	ldi	r30, 0xA3	; 163
+ 348:	f0 e0       	ldi	r31, 0x00	; 0
+ 34a:	a3 e8       	ldi	r26, 0x83	; 131
+ 34c:	b0 e0       	ldi	r27, 0x00	; 0
+ 34e:	89 ea       	ldi	r24, 0xA9	; 169
+ 350:	90 e0       	ldi	r25, 0x00	; 0
+			{
+				for (int i=0;i<6;i++)
+				{
+					UTC_time_H[i]=rawdata[i+2];
+ 352:	21 91       	ld	r18, Z+
+ 354:	2d 93       	st	X+, r18
+		if (count==14)
+		{
+			//USART_Transmit(rawdata[13]);
+			if (rawdata[13]=='A')
+			{
+				for (int i=0;i<6;i++)
+ 356:	e8 17       	cp	r30, r24
+ 358:	f9 07       	cpc	r31, r25
+ 35a:	d9 f7       	brne	.-10     	; 0x352 <__vector_7+0xaa>
+					UTC_time_H[i]=rawdata[i+2];
+				}
+				
+				for (int i=0;i<3;i++)
+				{
+					UTC_time_L[i]=rawdata[i+9];
+ 35c:	80 91 aa 00 	lds	r24, 0x00AA
+ 360:	80 93 7f 00 	sts	0x007F, r24
+ 364:	80 91 ab 00 	lds	r24, 0x00AB
+ 368:	80 93 80 00 	sts	0x0080, r24
+ 36c:	80 91 ac 00 	lds	r24, 0x00AC
+ 370:	80 93 81 00 	sts	0x0081, r24
+				}
+				
+				j=0;
+ 374:	10 92 8b 00 	sts	0x008B, r1
+ 378:	10 92 8a 00 	sts	0x008A, r1
+ 37c:	94 c0       	rjmp	.+296    	; 0x4a6 <__vector_7+0x1fe>
+			}
+			else if (rawdata[13]=='V'){
+ 37e:	86 35       	cpi	r24, 0x56	; 86
+ 380:	09 f0       	breq	.+2      	; 0x384 <__vector_7+0xdc>
+ 382:	85 c0       	rjmp	.+266    	; 0x48e <__vector_7+0x1e6>
+ 384:	e3 ea       	ldi	r30, 0xA3	; 163
+ 386:	f0 e0       	ldi	r31, 0x00	; 0
+ 388:	a3 e8       	ldi	r26, 0x83	; 131
+ 38a:	b0 e0       	ldi	r27, 0x00	; 0
+ 38c:	89 ea       	ldi	r24, 0xA9	; 169
+ 38e:	90 e0       	ldi	r25, 0x00	; 0
+				for (int i=0;i<6;i++)
+				{
+					UTC_time_H[i]=rawdata[i+2];
+ 390:	21 91       	ld	r18, Z+
+ 392:	2d 93       	st	X+, r18
+				}
+				
+				j=0;
+			}
+			else if (rawdata[13]=='V'){
+				for (int i=0;i<6;i++)
+ 394:	e8 17       	cp	r30, r24
+ 396:	f9 07       	cpc	r31, r25
+ 398:	d9 f7       	brne	.-10     	; 0x390 <__vector_7+0xe8>
+					UTC_time_H[i]=rawdata[i+2];
+				}
+				
+				for (int i=0;i<3;i++)
+				{
+					UTC_time_L[i]=rawdata[i+9];
+ 39a:	80 91 aa 00 	lds	r24, 0x00AA
+ 39e:	80 93 7f 00 	sts	0x007F, r24
+ 3a2:	80 91 ab 00 	lds	r24, 0x00AB
+ 3a6:	80 93 80 00 	sts	0x0080, r24
+ 3aa:	80 91 ac 00 	lds	r24, 0x00AC
+ 3ae:	80 93 81 00 	sts	0x0081, r24
+				}
+
+				now.UTC_time=(Ctol(UTC_time_H,6))*1000;
+ 3b2:	66 e0       	ldi	r22, 0x06	; 6
+ 3b4:	70 e0       	ldi	r23, 0x00	; 0
+ 3b6:	83 e8       	ldi	r24, 0x83	; 131
+ 3b8:	90 e0       	ldi	r25, 0x00	; 0
+ 3ba:	39 df       	rcall	.-398    	; 0x22e <Ctol>
+ 3bc:	6b 01       	movw	r12, r22
+ 3be:	7c 01       	movw	r14, r24
+ 3c0:	cc 0c       	add	r12, r12
+ 3c2:	dd 1c       	adc	r13, r13
+ 3c4:	ee 1c       	adc	r14, r14
+ 3c6:	ff 1c       	adc	r15, r15
+ 3c8:	cc 0c       	add	r12, r12
+ 3ca:	dd 1c       	adc	r13, r13
+ 3cc:	ee 1c       	adc	r14, r14
+ 3ce:	ff 1c       	adc	r15, r15
+ 3d0:	cc 0c       	add	r12, r12
+ 3d2:	dd 1c       	adc	r13, r13
+ 3d4:	ee 1c       	adc	r14, r14
+ 3d6:	ff 1c       	adc	r15, r15
+ 3d8:	d7 01       	movw	r26, r14
+ 3da:	c6 01       	movw	r24, r12
+ 3dc:	88 0f       	add	r24, r24
+ 3de:	99 1f       	adc	r25, r25
+ 3e0:	aa 1f       	adc	r26, r26
+ 3e2:	bb 1f       	adc	r27, r27
+ 3e4:	88 0f       	add	r24, r24
+ 3e6:	99 1f       	adc	r25, r25
+ 3e8:	aa 1f       	adc	r26, r26
+ 3ea:	bb 1f       	adc	r27, r27
+ 3ec:	c8 0e       	add	r12, r24
+ 3ee:	d9 1e       	adc	r13, r25
+ 3f0:	ea 1e       	adc	r14, r26
+ 3f2:	fb 1e       	adc	r15, r27
+ 3f4:	d7 01       	movw	r26, r14
+ 3f6:	c6 01       	movw	r24, r12
+ 3f8:	88 0f       	add	r24, r24
+ 3fa:	99 1f       	adc	r25, r25
+ 3fc:	aa 1f       	adc	r26, r26
+ 3fe:	bb 1f       	adc	r27, r27
+ 400:	88 0f       	add	r24, r24
+ 402:	99 1f       	adc	r25, r25
+ 404:	aa 1f       	adc	r26, r26
+ 406:	bb 1f       	adc	r27, r27
+ 408:	c8 0e       	add	r12, r24
+ 40a:	d9 1e       	adc	r13, r25
+ 40c:	ea 1e       	adc	r14, r26
+ 40e:	fb 1e       	adc	r15, r27
+ 410:	d7 01       	movw	r26, r14
+ 412:	c6 01       	movw	r24, r12
+ 414:	88 0f       	add	r24, r24
+ 416:	99 1f       	adc	r25, r25
+ 418:	aa 1f       	adc	r26, r26
+ 41a:	bb 1f       	adc	r27, r27
+ 41c:	88 0f       	add	r24, r24
+ 41e:	99 1f       	adc	r25, r25
+ 420:	aa 1f       	adc	r26, r26
+ 422:	bb 1f       	adc	r27, r27
+ 424:	c8 0e       	add	r12, r24
+ 426:	d9 1e       	adc	r13, r25
+ 428:	ea 1e       	adc	r14, r26
+ 42a:	fb 1e       	adc	r15, r27
+ 42c:	c0 e9       	ldi	r28, 0x90	; 144
+ 42e:	d0 e0       	ldi	r29, 0x00	; 0
+ 430:	c8 82       	st	Y, r12
+ 432:	d9 82       	std	Y+1, r13	; 0x01
+ 434:	ea 82       	std	Y+2, r14	; 0x02
+ 436:	fb 82       	std	Y+3, r15	; 0x03
+				now.UTC_time+=Ctol(UTC_time_L,3);
+ 438:	63 e0       	ldi	r22, 0x03	; 3
+ 43a:	70 e0       	ldi	r23, 0x00	; 0
+ 43c:	8f e7       	ldi	r24, 0x7F	; 127
+ 43e:	90 e0       	ldi	r25, 0x00	; 0
+ 440:	f6 de       	rcall	.-532    	; 0x22e <Ctol>
+ 442:	c6 0e       	add	r12, r22
+ 444:	d7 1e       	adc	r13, r23
+ 446:	e8 1e       	adc	r14, r24
+ 448:	f9 1e       	adc	r15, r25
+ 44a:	c8 82       	st	Y, r12
+ 44c:	d9 82       	std	Y+1, r13	; 0x01
+ 44e:	ea 82       	std	Y+2, r14	; 0x02
+ 450:	fb 82       	std	Y+3, r15	; 0x03
+				now.latitude=0;
+ 452:	10 92 94 00 	sts	0x0094, r1
+ 456:	10 92 95 00 	sts	0x0095, r1
+ 45a:	10 92 96 00 	sts	0x0096, r1
+ 45e:	10 92 97 00 	sts	0x0097, r1
+				now.longitude=0;
+ 462:	10 92 98 00 	sts	0x0098, r1
+ 466:	10 92 99 00 	sts	0x0099, r1
+ 46a:	10 92 9a 00 	sts	0x009A, r1
+ 46e:	10 92 9b 00 	sts	0x009B, r1
+								
+				PORTD&=~(1<<PD3);
+ 472:	93 98       	cbi	0x12, 3	; 18
+
+				status=0;
+ 474:	10 92 8f 00 	sts	0x008F, r1
+ 478:	10 92 8e 00 	sts	0x008E, r1
+				count=0;
+ 47c:	10 92 8d 00 	sts	0x008D, r1
+ 480:	10 92 8c 00 	sts	0x008C, r1
+				j=0;
+ 484:	10 92 8b 00 	sts	0x008B, r1
+ 488:	10 92 8a 00 	sts	0x008A, r1
+ 48c:	0c c0       	rjmp	.+24     	; 0x4a6 <__vector_7+0x1fe>
+				////end debug////////
+				
+				
+			}
+			else{
+				status=0;
+ 48e:	10 92 8f 00 	sts	0x008F, r1
+ 492:	10 92 8e 00 	sts	0x008E, r1
+				count=0;
+ 496:	10 92 8d 00 	sts	0x008D, r1
+ 49a:	10 92 8c 00 	sts	0x008C, r1
+				j=0;
+ 49e:	10 92 8b 00 	sts	0x008B, r1
+ 4a2:	10 92 8a 00 	sts	0x008A, r1
+			}
+		}
+		//緯度データの取得
+		if (count==24)
+ 4a6:	80 91 8c 00 	lds	r24, 0x008C
+ 4aa:	90 91 8d 00 	lds	r25, 0x008D
+ 4ae:	88 31       	cpi	r24, 0x18	; 24
+ 4b0:	91 05       	cpc	r25, r1
+ 4b2:	29 f5       	brne	.+74     	; 0x4fe <__vector_7+0x256>
+		{
+			for (int i=0;i<4;i++)
+			{
+				latitude_H[i]=rawdata[i+1];
+ 4b4:	80 91 a2 00 	lds	r24, 0x00A2
+ 4b8:	80 93 7a 00 	sts	0x007A, r24
+ 4bc:	80 91 a3 00 	lds	r24, 0x00A3
+ 4c0:	80 93 7b 00 	sts	0x007B, r24
+ 4c4:	80 91 a4 00 	lds	r24, 0x00A4
+ 4c8:	80 93 7c 00 	sts	0x007C, r24
+ 4cc:	80 91 a5 00 	lds	r24, 0x00A5
+ 4d0:	80 93 7d 00 	sts	0x007D, r24
+			}
+			for (int i=0;i<4;i++)
+			{
+				latitude_L[i]=rawdata[i+6];
+ 4d4:	80 91 a7 00 	lds	r24, 0x00A7
+ 4d8:	80 93 75 00 	sts	0x0075, r24
+ 4dc:	80 91 a8 00 	lds	r24, 0x00A8
+ 4e0:	80 93 76 00 	sts	0x0076, r24
+ 4e4:	80 91 a9 00 	lds	r24, 0x00A9
+ 4e8:	80 93 77 00 	sts	0x0077, r24
+ 4ec:	80 91 aa 00 	lds	r24, 0x00AA
+ 4f0:	80 93 78 00 	sts	0x0078, r24
+			}
+			j=0;
+ 4f4:	10 92 8b 00 	sts	0x008B, r1
+ 4f8:	10 92 8a 00 	sts	0x008A, r1
+ 4fc:	60 c1       	rjmp	.+704    	; 0x7be <__vector_7+0x516>
+		}
+		//経度データの取得
+		if (count==38)
+ 4fe:	86 97       	sbiw	r24, 0x26	; 38
+ 500:	09 f0       	breq	.+2      	; 0x504 <__vector_7+0x25c>
+ 502:	5d c1       	rjmp	.+698    	; 0x7be <__vector_7+0x516>
+ 504:	e4 ea       	ldi	r30, 0xA4	; 164
+ 506:	f0 e0       	ldi	r31, 0x00	; 0
+ 508:	af e6       	ldi	r26, 0x6F	; 111
+ 50a:	b0 e0       	ldi	r27, 0x00	; 0
+ 50c:	89 ea       	ldi	r24, 0xA9	; 169
+ 50e:	90 e0       	ldi	r25, 0x00	; 0
+		{
+			for (int i=0;i<5;i++)
+			{
+				longitude_H[i]=rawdata[i+3];
+ 510:	21 91       	ld	r18, Z+
+ 512:	2d 93       	st	X+, r18
+			j=0;
+		}
+		//経度データの取得
+		if (count==38)
+		{
+			for (int i=0;i<5;i++)
+ 514:	e8 17       	cp	r30, r24
+ 516:	f9 07       	cpc	r31, r25
+ 518:	d9 f7       	brne	.-10     	; 0x510 <__vector_7+0x268>
+			{
+				longitude_H[i]=rawdata[i+3];
+			}
+			for (int i=0;i<4;i++)
+			{
+				longitude_L[i]=rawdata[i+9];
+ 51a:	80 91 aa 00 	lds	r24, 0x00AA
+ 51e:	80 93 6a 00 	sts	0x006A, r24
+ 522:	80 91 ab 00 	lds	r24, 0x00AB
+ 526:	80 93 6b 00 	sts	0x006B, r24
+ 52a:	80 91 ac 00 	lds	r24, 0x00AC
+ 52e:	80 93 6c 00 	sts	0x006C, r24
+ 532:	80 91 ad 00 	lds	r24, 0x00AD
+ 536:	80 93 6d 00 	sts	0x006D, r24
+			}
+			//最終処理
+			//文字から数字への変換
+			now.UTC_time=(Ctol(UTC_time_H,6)*1000);
+ 53a:	66 e0       	ldi	r22, 0x06	; 6
+ 53c:	70 e0       	ldi	r23, 0x00	; 0
+ 53e:	83 e8       	ldi	r24, 0x83	; 131
+ 540:	90 e0       	ldi	r25, 0x00	; 0
+ 542:	75 de       	rcall	.-790    	; 0x22e <Ctol>
+ 544:	6b 01       	movw	r12, r22
+ 546:	7c 01       	movw	r14, r24
+ 548:	cc 0c       	add	r12, r12
+ 54a:	dd 1c       	adc	r13, r13
+ 54c:	ee 1c       	adc	r14, r14
+ 54e:	ff 1c       	adc	r15, r15
+ 550:	cc 0c       	add	r12, r12
+ 552:	dd 1c       	adc	r13, r13
+ 554:	ee 1c       	adc	r14, r14
+ 556:	ff 1c       	adc	r15, r15
+ 558:	cc 0c       	add	r12, r12
+ 55a:	dd 1c       	adc	r13, r13
+ 55c:	ee 1c       	adc	r14, r14
+ 55e:	ff 1c       	adc	r15, r15
+ 560:	d7 01       	movw	r26, r14
+ 562:	c6 01       	movw	r24, r12
+ 564:	88 0f       	add	r24, r24
+ 566:	99 1f       	adc	r25, r25
+ 568:	aa 1f       	adc	r26, r26
+ 56a:	bb 1f       	adc	r27, r27
+ 56c:	88 0f       	add	r24, r24
+ 56e:	99 1f       	adc	r25, r25
+ 570:	aa 1f       	adc	r26, r26
+ 572:	bb 1f       	adc	r27, r27
+ 574:	c8 0e       	add	r12, r24
+ 576:	d9 1e       	adc	r13, r25
+ 578:	ea 1e       	adc	r14, r26
+ 57a:	fb 1e       	adc	r15, r27
+ 57c:	d7 01       	movw	r26, r14
+ 57e:	c6 01       	movw	r24, r12
+ 580:	88 0f       	add	r24, r24
+ 582:	99 1f       	adc	r25, r25
+ 584:	aa 1f       	adc	r26, r26
+ 586:	bb 1f       	adc	r27, r27
+ 588:	88 0f       	add	r24, r24
+ 58a:	99 1f       	adc	r25, r25
+ 58c:	aa 1f       	adc	r26, r26
+ 58e:	bb 1f       	adc	r27, r27
+ 590:	c8 0e       	add	r12, r24
+ 592:	d9 1e       	adc	r13, r25
+ 594:	ea 1e       	adc	r14, r26
+ 596:	fb 1e       	adc	r15, r27
+ 598:	d7 01       	movw	r26, r14
+ 59a:	c6 01       	movw	r24, r12
+ 59c:	88 0f       	add	r24, r24
+ 59e:	99 1f       	adc	r25, r25
+ 5a0:	aa 1f       	adc	r26, r26
+ 5a2:	bb 1f       	adc	r27, r27
+ 5a4:	88 0f       	add	r24, r24
+ 5a6:	99 1f       	adc	r25, r25
+ 5a8:	aa 1f       	adc	r26, r26
+ 5aa:	bb 1f       	adc	r27, r27
+ 5ac:	c8 0e       	add	r12, r24
+ 5ae:	d9 1e       	adc	r13, r25
+ 5b0:	ea 1e       	adc	r14, r26
+ 5b2:	fb 1e       	adc	r15, r27
+ 5b4:	c0 e9       	ldi	r28, 0x90	; 144
+ 5b6:	d0 e0       	ldi	r29, 0x00	; 0
+ 5b8:	c8 82       	st	Y, r12
+ 5ba:	d9 82       	std	Y+1, r13	; 0x01
+ 5bc:	ea 82       	std	Y+2, r14	; 0x02
+ 5be:	fb 82       	std	Y+3, r15	; 0x03
+			now.UTC_time+=Ctol(UTC_time_L,3);
+ 5c0:	63 e0       	ldi	r22, 0x03	; 3
+ 5c2:	70 e0       	ldi	r23, 0x00	; 0
+ 5c4:	8f e7       	ldi	r24, 0x7F	; 127
+ 5c6:	90 e0       	ldi	r25, 0x00	; 0
+ 5c8:	32 de       	rcall	.-924    	; 0x22e <Ctol>
+ 5ca:	c6 0e       	add	r12, r22
+ 5cc:	d7 1e       	adc	r13, r23
+ 5ce:	e8 1e       	adc	r14, r24
+ 5d0:	f9 1e       	adc	r15, r25
+ 5d2:	c8 82       	st	Y, r12
+ 5d4:	d9 82       	std	Y+1, r13	; 0x01
+ 5d6:	ea 82       	std	Y+2, r14	; 0x02
+ 5d8:	fb 82       	std	Y+3, r15	; 0x03
+			now.latitude=(Ctol(latitude_H,4)*10000);
+ 5da:	64 e0       	ldi	r22, 0x04	; 4
+ 5dc:	70 e0       	ldi	r23, 0x00	; 0
+ 5de:	8a e7       	ldi	r24, 0x7A	; 122
+ 5e0:	90 e0       	ldi	r25, 0x00	; 0
+ 5e2:	25 de       	rcall	.-950    	; 0x22e <Ctol>
+ 5e4:	6b 01       	movw	r12, r22
+ 5e6:	7c 01       	movw	r14, r24
+ 5e8:	cc 0c       	add	r12, r12
+ 5ea:	dd 1c       	adc	r13, r13
+ 5ec:	ee 1c       	adc	r14, r14
+ 5ee:	ff 1c       	adc	r15, r15
+ 5f0:	cc 0c       	add	r12, r12
+ 5f2:	dd 1c       	adc	r13, r13
+ 5f4:	ee 1c       	adc	r14, r14
+ 5f6:	ff 1c       	adc	r15, r15
+ 5f8:	cc 0c       	add	r12, r12
+ 5fa:	dd 1c       	adc	r13, r13
+ 5fc:	ee 1c       	adc	r14, r14
+ 5fe:	ff 1c       	adc	r15, r15
+ 600:	cc 0c       	add	r12, r12
+ 602:	dd 1c       	adc	r13, r13
+ 604:	ee 1c       	adc	r14, r14
+ 606:	ff 1c       	adc	r15, r15
+ 608:	d7 01       	movw	r26, r14
+ 60a:	c6 01       	movw	r24, r12
+ 60c:	88 0f       	add	r24, r24
+ 60e:	99 1f       	adc	r25, r25
+ 610:	aa 1f       	adc	r26, r26
+ 612:	bb 1f       	adc	r27, r27
+ 614:	88 0f       	add	r24, r24
+ 616:	99 1f       	adc	r25, r25
+ 618:	aa 1f       	adc	r26, r26
+ 61a:	bb 1f       	adc	r27, r27
+ 61c:	c8 0e       	add	r12, r24
+ 61e:	d9 1e       	adc	r13, r25
+ 620:	ea 1e       	adc	r14, r26
+ 622:	fb 1e       	adc	r15, r27
+ 624:	d7 01       	movw	r26, r14
+ 626:	c6 01       	movw	r24, r12
+ 628:	88 0f       	add	r24, r24
+ 62a:	99 1f       	adc	r25, r25
+ 62c:	aa 1f       	adc	r26, r26
+ 62e:	bb 1f       	adc	r27, r27
+ 630:	88 0f       	add	r24, r24
+ 632:	99 1f       	adc	r25, r25
+ 634:	aa 1f       	adc	r26, r26
+ 636:	bb 1f       	adc	r27, r27
+ 638:	c8 0e       	add	r12, r24
+ 63a:	d9 1e       	adc	r13, r25
+ 63c:	ea 1e       	adc	r14, r26
+ 63e:	fb 1e       	adc	r15, r27
+ 640:	d7 01       	movw	r26, r14
+ 642:	c6 01       	movw	r24, r12
+ 644:	88 0f       	add	r24, r24
+ 646:	99 1f       	adc	r25, r25
+ 648:	aa 1f       	adc	r26, r26
+ 64a:	bb 1f       	adc	r27, r27
+ 64c:	88 0f       	add	r24, r24
+ 64e:	99 1f       	adc	r25, r25
+ 650:	aa 1f       	adc	r26, r26
+ 652:	bb 1f       	adc	r27, r27
+ 654:	c8 0e       	add	r12, r24
+ 656:	d9 1e       	adc	r13, r25
+ 658:	ea 1e       	adc	r14, r26
+ 65a:	fb 1e       	adc	r15, r27
+ 65c:	d7 01       	movw	r26, r14
+ 65e:	c6 01       	movw	r24, r12
+ 660:	88 0f       	add	r24, r24
+ 662:	99 1f       	adc	r25, r25
+ 664:	aa 1f       	adc	r26, r26
+ 666:	bb 1f       	adc	r27, r27
+ 668:	88 0f       	add	r24, r24
+ 66a:	99 1f       	adc	r25, r25
+ 66c:	aa 1f       	adc	r26, r26
+ 66e:	bb 1f       	adc	r27, r27
+ 670:	c8 0e       	add	r12, r24
+ 672:	d9 1e       	adc	r13, r25
+ 674:	ea 1e       	adc	r14, r26
+ 676:	fb 1e       	adc	r15, r27
+ 678:	c4 e9       	ldi	r28, 0x94	; 148
+ 67a:	d0 e0       	ldi	r29, 0x00	; 0
+ 67c:	c8 82       	st	Y, r12
+ 67e:	d9 82       	std	Y+1, r13	; 0x01
+ 680:	ea 82       	std	Y+2, r14	; 0x02
+ 682:	fb 82       	std	Y+3, r15	; 0x03
+			now.latitude+=Ctol(latitude_L,4);
+ 684:	64 e0       	ldi	r22, 0x04	; 4
+ 686:	70 e0       	ldi	r23, 0x00	; 0
+ 688:	85 e7       	ldi	r24, 0x75	; 117
+ 68a:	90 e0       	ldi	r25, 0x00	; 0
+ 68c:	d0 dd       	rcall	.-1120   	; 0x22e <Ctol>
+ 68e:	c6 0e       	add	r12, r22
+ 690:	d7 1e       	adc	r13, r23
+ 692:	e8 1e       	adc	r14, r24
+ 694:	f9 1e       	adc	r15, r25
+ 696:	c8 82       	st	Y, r12
+ 698:	d9 82       	std	Y+1, r13	; 0x01
+ 69a:	ea 82       	std	Y+2, r14	; 0x02
+ 69c:	fb 82       	std	Y+3, r15	; 0x03
+			now.longitude=(Ctol(longitude_H,5)*10000);
+ 69e:	65 e0       	ldi	r22, 0x05	; 5
+ 6a0:	70 e0       	ldi	r23, 0x00	; 0
+ 6a2:	8f e6       	ldi	r24, 0x6F	; 111
+ 6a4:	90 e0       	ldi	r25, 0x00	; 0
+ 6a6:	c3 dd       	rcall	.-1146   	; 0x22e <Ctol>
+ 6a8:	6b 01       	movw	r12, r22
+ 6aa:	7c 01       	movw	r14, r24
+ 6ac:	cc 0c       	add	r12, r12
+ 6ae:	dd 1c       	adc	r13, r13
+ 6b0:	ee 1c       	adc	r14, r14
+ 6b2:	ff 1c       	adc	r15, r15
+ 6b4:	cc 0c       	add	r12, r12
+ 6b6:	dd 1c       	adc	r13, r13
+ 6b8:	ee 1c       	adc	r14, r14
+ 6ba:	ff 1c       	adc	r15, r15
+ 6bc:	cc 0c       	add	r12, r12
+ 6be:	dd 1c       	adc	r13, r13
+ 6c0:	ee 1c       	adc	r14, r14
+ 6c2:	ff 1c       	adc	r15, r15
+ 6c4:	cc 0c       	add	r12, r12
+ 6c6:	dd 1c       	adc	r13, r13
+ 6c8:	ee 1c       	adc	r14, r14
+ 6ca:	ff 1c       	adc	r15, r15
+ 6cc:	d7 01       	movw	r26, r14
+ 6ce:	c6 01       	movw	r24, r12
+ 6d0:	88 0f       	add	r24, r24
+ 6d2:	99 1f       	adc	r25, r25
+ 6d4:	aa 1f       	adc	r26, r26
+ 6d6:	bb 1f       	adc	r27, r27
+ 6d8:	88 0f       	add	r24, r24
+ 6da:	99 1f       	adc	r25, r25
+ 6dc:	aa 1f       	adc	r26, r26
+ 6de:	bb 1f       	adc	r27, r27
+ 6e0:	c8 0e       	add	r12, r24
+ 6e2:	d9 1e       	adc	r13, r25
+ 6e4:	ea 1e       	adc	r14, r26
+ 6e6:	fb 1e       	adc	r15, r27
+ 6e8:	d7 01       	movw	r26, r14
+ 6ea:	c6 01       	movw	r24, r12
+ 6ec:	88 0f       	add	r24, r24
+ 6ee:	99 1f       	adc	r25, r25
+ 6f0:	aa 1f       	adc	r26, r26
+ 6f2:	bb 1f       	adc	r27, r27
+ 6f4:	88 0f       	add	r24, r24
+ 6f6:	99 1f       	adc	r25, r25
+ 6f8:	aa 1f       	adc	r26, r26
+ 6fa:	bb 1f       	adc	r27, r27
+ 6fc:	c8 0e       	add	r12, r24
+ 6fe:	d9 1e       	adc	r13, r25
+ 700:	ea 1e       	adc	r14, r26
+ 702:	fb 1e       	adc	r15, r27
+ 704:	d7 01       	movw	r26, r14
+ 706:	c6 01       	movw	r24, r12
+ 708:	88 0f       	add	r24, r24
+ 70a:	99 1f       	adc	r25, r25
+ 70c:	aa 1f       	adc	r26, r26
+ 70e:	bb 1f       	adc	r27, r27
+ 710:	88 0f       	add	r24, r24
+ 712:	99 1f       	adc	r25, r25
+ 714:	aa 1f       	adc	r26, r26
+ 716:	bb 1f       	adc	r27, r27
+ 718:	c8 0e       	add	r12, r24
+ 71a:	d9 1e       	adc	r13, r25
+ 71c:	ea 1e       	adc	r14, r26
+ 71e:	fb 1e       	adc	r15, r27
+ 720:	d7 01       	movw	r26, r14
+ 722:	c6 01       	movw	r24, r12
+ 724:	88 0f       	add	r24, r24
+ 726:	99 1f       	adc	r25, r25
+ 728:	aa 1f       	adc	r26, r26
+ 72a:	bb 1f       	adc	r27, r27
+ 72c:	88 0f       	add	r24, r24
+ 72e:	99 1f       	adc	r25, r25
+ 730:	aa 1f       	adc	r26, r26
+ 732:	bb 1f       	adc	r27, r27
+ 734:	c8 0e       	add	r12, r24
+ 736:	d9 1e       	adc	r13, r25
+ 738:	ea 1e       	adc	r14, r26
+ 73a:	fb 1e       	adc	r15, r27
+ 73c:	c8 e9       	ldi	r28, 0x98	; 152
+ 73e:	d0 e0       	ldi	r29, 0x00	; 0
+ 740:	c8 82       	st	Y, r12
+ 742:	d9 82       	std	Y+1, r13	; 0x01
+ 744:	ea 82       	std	Y+2, r14	; 0x02
+ 746:	fb 82       	std	Y+3, r15	; 0x03
+			now.longitude+=Ctol(longitude_L,4);
+ 748:	64 e0       	ldi	r22, 0x04	; 4
+ 74a:	70 e0       	ldi	r23, 0x00	; 0
+ 74c:	8a e6       	ldi	r24, 0x6A	; 106
+ 74e:	90 e0       	ldi	r25, 0x00	; 0
+ 750:	6e dd       	rcall	.-1316   	; 0x22e <Ctol>
+ 752:	c6 0e       	add	r12, r22
+ 754:	d7 1e       	adc	r13, r23
+ 756:	e8 1e       	adc	r14, r24
+ 758:	f9 1e       	adc	r15, r25
+ 75a:	c8 82       	st	Y, r12
+ 75c:	d9 82       	std	Y+1, r13	; 0x01
+ 75e:	ea 82       	std	Y+2, r14	; 0x02
+ 760:	fb 82       	std	Y+3, r15	; 0x03
+			
+			//TODO:わりこみしような
+			
+			PORTD&=~(1<<PD3);
+ 762:	93 98       	cbi	0x12, 3	; 18
+			
+			//状態変数達の初期化
+			status=0;
+ 764:	10 92 8f 00 	sts	0x008F, r1
+ 768:	10 92 8e 00 	sts	0x008E, r1
+			count=0;
+ 76c:	10 92 8d 00 	sts	0x008D, r1
+ 770:	10 92 8c 00 	sts	0x008C, r1
+			j=0;
+ 774:	10 92 8b 00 	sts	0x008B, r1
+ 778:	10 92 8a 00 	sts	0x008A, r1
+ 77c:	20 c0       	rjmp	.+64     	; 0x7be <__vector_7+0x516>
+	}
+
+	//status状態変数がTrueのとき、データの解析を行う
+	if (status==1)
+	{
+		TIMER_ON();
+ 77e:	83 b7       	in	r24, 0x33	; 51
+ 780:	84 60       	ori	r24, 0x04	; 4
+ 782:	83 bf       	out	0x33, r24	; 51
+		rawdata[j]=stack[0];
+ 784:	20 91 8a 00 	lds	r18, 0x008A
+ 788:	30 91 8b 00 	lds	r19, 0x008B
+ 78c:	f9 01       	movw	r30, r18
+ 78e:	ef 55       	subi	r30, 0x5F	; 95
+ 790:	ff 4f       	sbci	r31, 0xFF	; 255
+ 792:	80 91 9c 00 	lds	r24, 0x009C
+ 796:	80 83       	st	Z, r24
+		count++;
+ 798:	80 91 8c 00 	lds	r24, 0x008C
+ 79c:	90 91 8d 00 	lds	r25, 0x008D
+ 7a0:	01 96       	adiw	r24, 0x01	; 1
+ 7a2:	90 93 8d 00 	sts	0x008D, r25
+ 7a6:	80 93 8c 00 	sts	0x008C, r24
+		j++;
+ 7aa:	2f 5f       	subi	r18, 0xFF	; 255
+ 7ac:	3f 4f       	sbci	r19, 0xFF	; 255
+ 7ae:	30 93 8b 00 	sts	0x008B, r19
+ 7b2:	20 93 8a 00 	sts	0x008A, r18
+		//UTCデータの取得
+		if (count==14)
+ 7b6:	0e 97       	sbiw	r24, 0x0e	; 14
+ 7b8:	09 f0       	breq	.+2      	; 0x7bc <__vector_7+0x514>
+ 7ba:	75 ce       	rjmp	.-790    	; 0x4a6 <__vector_7+0x1fe>
+ 7bc:	c0 cd       	rjmp	.-1152   	; 0x33e <__vector_7+0x96>
+			
+			////end debug////////
+			
+		}
+	}
+}
+ 7be:	ff 91       	pop	r31
+ 7c0:	ef 91       	pop	r30
+ 7c2:	df 91       	pop	r29
+ 7c4:	cf 91       	pop	r28
+ 7c6:	bf 91       	pop	r27
+ 7c8:	af 91       	pop	r26
+ 7ca:	9f 91       	pop	r25
+ 7cc:	8f 91       	pop	r24
+ 7ce:	7f 91       	pop	r23
+ 7d0:	6f 91       	pop	r22
+ 7d2:	5f 91       	pop	r21
+ 7d4:	4f 91       	pop	r20
+ 7d6:	3f 91       	pop	r19
+ 7d8:	2f 91       	pop	r18
+ 7da:	ff 90       	pop	r15
+ 7dc:	ef 90       	pop	r14
+ 7de:	df 90       	pop	r13
+ 7e0:	cf 90       	pop	r12
+ 7e2:	0f 90       	pop	r0
+ 7e4:	0f be       	out	0x3f, r0	; 63
+ 7e6:	0f 90       	pop	r0
+ 7e8:	1f 90       	pop	r1
+ 7ea:	18 95       	reti
+
+000007ec <_exit>:
+ 7ec:	f8 94       	cli
+
+000007ee <__stop_program>:
+ 7ee:	ff cf       	rjmp	.-2      	; 0x7ee <__stop_program>

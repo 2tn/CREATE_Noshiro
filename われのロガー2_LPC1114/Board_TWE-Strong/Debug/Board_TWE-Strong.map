@@ -1,0 +1,352 @@
+Archive member included because of file (symbol)
+
+C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+                              ./src/cr_startup_lpc11xx.o (SystemInit)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc11xx.o (__main)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+                              ./src/Board_TWE-Strong.o (__aeabi_uidiv)
+c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+                              c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o) (__aeabi_idiv0)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/Board_TWE-Strong.o
+ .text          0x00000000        0x0 ./src/Board_TWE-Strong.o
+ .data          0x00000000        0x0 ./src/Board_TWE-Strong.o
+ .bss           0x00000000        0x0 ./src/Board_TWE-Strong.o
+ .group         0x00000000        0x8 ./src/cr_startup_lpc11xx.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc11xx.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc11xx.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc11xx.o
+ .debug_macro   0x00000000      0x838 ./src/cr_startup_lpc11xx.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .group         0x00000000        0x8 ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .debug_macro   0x00000000      0x838 ./src/crp.o
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .group         0x00000000        0x8 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .text          0x00000000        0x0 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .data          0x00000000        0x0 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .bss           0x00000000        0x0 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000       0xa0 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .rodata.CSWTCH.7
+                0x00000000       0x40 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000      0x12d C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000      0x5b2 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000       0x1c C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000       0x2e C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000      0x237 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00000000      0x131 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+ .text          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+ .data          0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+ .bss           0x00000000        0x0 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash32         0x00000000         0x00008000         xr
+RamLoc8          0x10000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/Board_TWE-Strong.o
+LOAD ./src/cr_startup_lpc11xx.o
+LOAD ./src/crp.o
+LOAD C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a
+START GROUP
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
+LOAD c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a
+END GROUP
+                0x00008000                __top_MFlash32 = 0x8000
+                0x10002000                __top_RamLoc8 = 0x10002000
+
+.text           0x00000000      0x748
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./src/cr_startup_lpc11xx.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0x748 LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000c8        0x4 LONG 0x4 SIZEOF (.data)
+                0x000000cc                __data_section_table_end = .
+                0x000000cc                __bss_section_table = .
+                0x000000cc        0x4 LONG 0x10000004 ADDR (.bss)
+                0x000000d0        0x4 LONG 0xc SIZEOF (.bss)
+                0x000000d4                __bss_section_table_end = .
+                0x000000d4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000d4      0x128 ./src/cr_startup_lpc11xx.o
+                0x000000d4                data_init
+                0x00000114                bss_init
+                0x00000148                ResetISR
+                0x000001cc                NMI_Handler
+                0x000001d4                HardFault_Handler
+                0x000001dc                SVC_Handler
+                0x000001e4                PendSV_Handler
+                0x000001f4                PIOINT1_IRQHandler
+                0x000001f4                CAN_IRQHandler
+                0x000001f4                SSP0_IRQHandler
+                0x000001f4                IntDefaultHandler
+                0x000001f4                TIMER32_1_IRQHandler
+                0x000001f4                TIMER32_0_IRQHandler
+                0x000001f4                ADC_IRQHandler
+                0x000001f4                SSP1_IRQHandler
+                0x000001f4                PIOINT2_IRQHandler
+                0x000001f4                BOD_IRQHandler
+                0x000001f4                WAKEUP_IRQHandler
+                0x000001f4                PIOINT0_IRQHandler
+                0x000001f4                I2C_IRQHandler
+                0x000001f4                WDT_IRQHandler
+                0x000001f4                TIMER16_1_IRQHandler
+                0x000001f4                TIMER16_0_IRQHandler
+                0x000001f4                PIOINT3_IRQHandler
+                0x000002fc                . = 0x2fc
+ *fill*         0x000001fc      0x100 ff
+                0x000002fc                PROVIDE (__CRP_WORD_START__, .)
+ *(.crp)
+ .crp           0x000002fc        0x4 ./src/crp.o
+                0x000002fc                CRP_WORD
+                0x00000300                PROVIDE (__CRP_WORD_END__, .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.NVIC_EnableIRQ
+                0x00000300       0x2c ./src/Board_TWE-Strong.o
+ .text.NVIC_SetPriority
+                0x0000032c       0xd4 ./src/Board_TWE-Strong.o
+ .text.SysTick_Config
+                0x00000400       0x4c ./src/Board_TWE-Strong.o
+ .text.SysTick_Handler
+                0x0000044c       0x38 ./src/Board_TWE-Strong.o
+                0x0000044c                SysTick_Handler
+ .text.UART_IRQHandler
+                0x00000484       0x20 ./src/Board_TWE-Strong.o
+                0x00000484                UART_IRQHandler
+ .text.main     0x000004a4       0x40 ./src/Board_TWE-Strong.o
+                0x000004a4                main
+ .text.UART_initialize
+                0x000004e4       0xd4 ./src/Board_TWE-Strong.o
+                0x000004e4                UART_initialize
+ .text.UART_SendChar
+                0x000005b8       0x2c ./src/Board_TWE-Strong.o
+                0x000005b8                UART_SendChar
+ .text.UART_SendString
+                0x000005e4       0x28 ./src/Board_TWE-Strong.o
+                0x000005e4                UART_SendString
+ .text.UART_Read
+                0x0000060c       0x20 ./src/Board_TWE-Strong.o
+                0x0000060c                UART_Read
+ .text.SystemInit
+                0x0000062c       0x90 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+                0x0000062c                SystemInit
+ .text.__weak_main
+                0x000006bc        0x8 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+                0x000006bc                __weak_main
+                0x000006bc                __main
+ .text.__aeabi_division_idivmod
+                0x000006c4       0x78 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+                0x000006c4                __aeabi_idivmod
+                0x000006c4                __aeabi_idiv
+                0x000006ca                __aeabi_uidivmod
+                0x000006ca                __aeabi_uidiv
+ .text.__aeabi_division_idiv0
+                0x0000073c        0x2 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+                0x0000073c                __aeabi_idiv0
+ *(.rodata .rodata.* .constdata .constdata.*)
+ *fill*         0x0000073e        0x2 
+ .rodata        0x00000740        0x8 ./src/Board_TWE-Strong.o
+                0x00000748                . = ALIGN (0x4)
+
+.glue_7         0x00000748        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000748        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000748        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000748        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00000748        0x0
+ .iplt          0x00000000        0x0 ./src/Board_TWE-Strong.o
+
+.rel.dyn        0x00000748        0x0
+ .rel.iplt      0x00000000        0x0 ./src/Board_TWE-Strong.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000748                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000748                __exidx_end = .
+                0x00000748                _etext = .
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x4 load address 0x00000748
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+ .data.SystemCoreClock
+                0x10000000        0x4 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+                0x10000000                SystemCoreClock
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _edata = .
+
+.igot.plt       0x10000004        0x0 load address 0x0000074c
+ .igot.plt      0x00000000        0x0 ./src/Board_TWE-Strong.o
+
+.bss            0x10000004        0xc load address 0x0000074c
+                0x10000004                _bss = .
+ *(.bss*)
+ .bss.count     0x10000004        0x4 ./src/Board_TWE-Strong.o
+ .bss.period.4519
+                0x10000008        0x4 ./src/Board_TWE-Strong.o
+ .bss.i.4520    0x1000000c        0x4 ./src/Board_TWE-Strong.o
+ *(COMMON)
+                0x10000010                . = ALIGN (0x4)
+                0x10000010                _ebss = .
+                0x10000010                PROVIDE (end, .)
+
+.noinit         0x10000010        0x0 load address 0x0000074c
+                0x10000010                _noinit = .
+ *(.noinit*)
+                0x10000010                . = ALIGN (0x4)
+                0x10000010                _end_noinit = .
+                0x10000010                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10002000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc8 - 0x0))
+OUTPUT(Board_TWE-Strong.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x12e1
+ .debug_info    0x00000000      0xc4e ./src/Board_TWE-Strong.o
+ .debug_info    0x00000c4e      0x1fe ./src/cr_startup_lpc11xx.o
+ .debug_info    0x00000e4c       0x3f ./src/crp.o
+ .debug_info    0x00000e8b      0x456 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_abbrev   0x00000000      0x474
+ .debug_abbrev  0x00000000      0x252 ./src/Board_TWE-Strong.o
+ .debug_abbrev  0x00000252       0xe6 ./src/cr_startup_lpc11xx.o
+ .debug_abbrev  0x00000338       0x36 ./src/crp.o
+ .debug_abbrev  0x0000036e      0x106 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_aranges  0x00000000      0x108
+ .debug_aranges
+                0x00000000       0x68 ./src/Board_TWE-Strong.o
+ .debug_aranges
+                0x00000068       0x60 ./src/cr_startup_lpc11xx.o
+ .debug_aranges
+                0x000000c8       0x18 ./src/crp.o
+ .debug_aranges
+                0x000000e0       0x28 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_ranges   0x00000000       0xc0
+ .debug_ranges  0x00000000       0x58 ./src/Board_TWE-Strong.o
+ .debug_ranges  0x00000058       0x50 ./src/cr_startup_lpc11xx.o
+ .debug_ranges  0x000000a8       0x18 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_macro    0x00000000     0x1e6a
+ .debug_macro   0x00000000       0x98 ./src/Board_TWE-Strong.o
+ .debug_macro   0x00000098      0x838 ./src/Board_TWE-Strong.o
+ .debug_macro   0x000008d0       0x1c ./src/Board_TWE-Strong.o
+ .debug_macro   0x000008ec       0x2e ./src/Board_TWE-Strong.o
+ .debug_macro   0x0000091a       0x10 ./src/Board_TWE-Strong.o
+ .debug_macro   0x0000092a      0x12d ./src/Board_TWE-Strong.o
+ .debug_macro   0x00000a57      0x5b2 ./src/Board_TWE-Strong.o
+ .debug_macro   0x00001009      0x237 ./src/Board_TWE-Strong.o
+ .debug_macro   0x00001240      0x131 ./src/Board_TWE-Strong.o
+ .debug_macro   0x00001371       0x82 ./src/Board_TWE-Strong.o
+ .debug_macro   0x000013f3       0xa0 ./src/Board_TWE-Strong.o
+ .debug_macro   0x00001493       0x1d ./src/cr_startup_lpc11xx.o
+ .debug_macro   0x000014b0       0x1a ./src/crp.o
+ .debug_macro   0x000014ca       0x34 ./src/crp.o
+ .debug_macro   0x000014fe      0x13a C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .debug_macro   0x00001638      0x832 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_line     0x00000000      0x5fb
+ .debug_line    0x00000000      0x2fd ./src/Board_TWE-Strong.o
+ .debug_line    0x000002fd       0xba ./src/cr_startup_lpc11xx.o
+ .debug_line    0x000003b7       0x78 ./src/crp.o
+ .debug_line    0x0000042f      0x1cc C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_str      0x00000000     0x64c9
+ .debug_str     0x00000000     0x5dcc ./src/Board_TWE-Strong.o
+                               0x5e66 (size before relaxing)
+ .debug_str     0x00005dcc      0x168 ./src/cr_startup_lpc11xx.o
+                               0x250c (size before relaxing)
+ .debug_str     0x00005f34       0xe9 ./src/crp.o
+                               0x246e (size before relaxing)
+ .debug_str     0x0000601d      0x4ac C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+                               0x561f (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./src/Board_TWE-Strong.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/cr_startup_lpc11xx.o
+ .comment       0x00000000       0x71 ./src/crp.o
+ .comment       0x00000000       0x71 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .comment       0x00000000       0x71 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 ./src/Board_TWE-Strong.o
+ .ARM.attributes
+                0x00000031       0x31 ./src/cr_startup_lpc11xx.o
+ .ARM.attributes
+                0x00000062       0x31 ./src/crp.o
+ .ARM.attributes
+                0x00000093       0x31 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+ .ARM.attributes
+                0x000000c4       0x31 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__weak__main.o)
+ .ARM.attributes
+                0x000000f5       0x21 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_32.o)
+ .ARM.attributes
+                0x00000116       0x21 c:/nxp/lpcxpresso_7.7.2_379/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libcr_eabihelpers.a(division_idiv0.o)
+
+.debug_frame    0x00000000      0x2a4
+ .debug_frame   0x00000000      0x148 ./src/Board_TWE-Strong.o
+ .debug_frame   0x00000148      0x118 ./src/cr_startup_lpc11xx.o
+ .debug_frame   0x00000260       0x44 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
+
+.debug_loc      0x00000000       0x84
+ .debug_loc     0x00000000       0x84 C:\Users\Yusuke\Documents\LPCXpresso_7.7.2_379\workspace\CMSISv2p00_LPC11xx\Debug\libCMSISv2p00_LPC11xx.a(system_LPC11xx.o)
