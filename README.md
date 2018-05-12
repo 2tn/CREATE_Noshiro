@@ -1,6 +1,9 @@
 # CREATE_Noshiro
 2015年8月の能代宇宙イベントで打ち上げたCREATEのロケットに搭載したアビオニクス、「われのロガー2」のプログラム及び発注基板データ。
 
+![dsc02677](https://user-images.githubusercontent.com/24986065/39954658-98bf91a6-55fd-11e8-9df9-0342bf28d7cf.JPG)
+
+
 基板にはLPC1114とATtiny2313の二つのマイコンが搭載されている。
 搭載したパーツは
 - LPC1114FBD48 (メインマイコン)
